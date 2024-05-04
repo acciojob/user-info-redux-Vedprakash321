@@ -5,7 +5,25 @@ import './../styles/App.css';
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <h1>User Information</h1>
+      <label>
+        Name: 
+        <input type="text" value={name} onChange={handleNameChange} />
+      </label>
+      <br />
+      <label>
+        Email: 
+        <input type="email" value={email} onChange={handleEmailChange} />
+      </label>
+      <br />
+      <br />
+      <div>
+        <strong>Current values in store:</strong>
+        <br />
+        Name - {name}
+        <br />
+        Email - {email}
+      </div>
     </div>
   )
 }
